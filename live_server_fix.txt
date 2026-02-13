@@ -1,0 +1,20 @@
+# FINAL FIX: Profile Update, Search Tabs & Redesign
+
+I have fixed the "Action not allowed" error, fixed the search tab indicator, and redesigned the profile page to be more colorful.
+
+### FILES TO UPLOAD:
+1.  `application/views/profile.php` (New colorful design + CSRF fix)
+2.  `application/views/search.php` (Search tab fix)
+3.  `application/views/home.php` (CSRF fix for follow buttons)
+4.  `application/views/auth/forgot_password.php` (CSRF fix)
+5.  `application/views/auth/reset_password.php` (CSRF fix)
+
+### Why it was failing:
+CodeIgniter has a security feature called **CSRF (Cross-Site Request Forgery) Protection**. It requires every form and every AJAX request to include a "Security Token". If the token is missing, the server rejects the request with the "Action not allowed" error. I have now added these tokens to your profile and home pages.
+
+---
+### Status:
+*   **Registration:** FIXED (Compression + Optional Photo + DB Sessions)
+*   **Profile Editing & Following:** FIXED (CSRF Tokens)
+*   **Search Tabs:** FIXED (Highlighting active tab)
+*   **Profile Aesthetics:** REDESIGNED (Vibrant gradients + Glassmorphism)
