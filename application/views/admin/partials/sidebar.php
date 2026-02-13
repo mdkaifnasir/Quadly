@@ -40,6 +40,11 @@ $inactive = 'text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-
             <span class="material-symbols-outlined">face</span>
             Face Search
         </a>
+        <a href="<?= base_url('lost_found') ?>"
+            class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg <?= $page == 'lost_found' ? $active : $inactive ?>">
+            <span class="material-symbols-outlined">inventory_2</span>
+            Lost & Found
+        </a>
         <a href="<?= base_url('admin/media') ?>"
             class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg <?= $page == 'media' ? $active : $inactive ?>">
             <span class="material-symbols-outlined">perm_media</span>

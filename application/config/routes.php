@@ -67,3 +67,4 @@ $route['api/post/restrict_user/(:num)'] = 'post/restrict_user/$1';
 $route['api/post/block_user/(:num)'] = 'post/block_user/$1';
 $route['api/post/report/(:num)'] = 'post/report/$1';
 $route['api/post/delete/(:num)'] = 'post/delete/$1';
+$route['messages/chat/(:num)'] = 'messages/user/$1';
