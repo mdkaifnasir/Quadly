@@ -1308,7 +1308,7 @@ $this->load->view('components/user_header', $data);
 </script>
 <?php $this->load->view('components/follow_list_modal'); ?>
 <script>const baseUrl = "<?= base_url() ?>";</script>
-<script src="<?= base_url('public/js/post_menu.js') ?>"></script>
+<script src="<?= base_url('public/js/post_menu.js?v=1.4') ?>"></script>
 </body>
 
 </html>
